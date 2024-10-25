@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 4rem ;
+    list-style: none;
+    text-decoration: none;
+}
+*:root{
+    --main-color: rgb(13, 128, 0); 
+    --text-color: black;
+    --bg-color:   white;
+    --big-font: 2.5rem;
+    --h2-font: 2.25rem;
+    --h1-font: 4rem;
+    
+}
+header{
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    justify-content: space-between;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 18px 100px;
+
+}
+.navbar {
+  display: flex;
+  margin-left: 0; 
+}
+
+.navbar.active {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; 
+  width: 100%; 
+  padding: 20px 0; 
+  position: absolute; 
+  top: 100%; 
+  left: 0; 
+  background-color: var(--bg-color); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar a {
+  padding: 10px 20px;
+  margin: 0; 
+}
+
+.logo{
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--main-color);
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 600;
+}
+.navbar a:hover{
+    color: rgb(45, 128, 0);
+    
+}
+#menu-icon{
+    font-size: 1rem;
+    display: none;
+    cursor: pointer;
+}
+section{
+    padding: 50px 10%;
+
+}
+#home{
+    width: 100%;
+    display: grid;
+    line-height: 5vh;
+    gap: 1rem;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.home-img img{
+    width: 100%;
+    padding-left: 20%;
+}
+.home-text h1{
+    font-size: 4rem;
+    color: var(--main-color);
+    
+}
+.home-text h2{
+    margin: 1rem 0 1rem;
+    padding-top: 0%;
+}
+.btn {
+    display: inline-block;
+    background: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 1.5rem;
+    color: white;
+  }
+  .btn:hover {
+    background: #ffa400;
+}    
+
+
+
+
+.about{
+    display: grid;
+    width: 100%;
+    line-height: 5vh;
+    gap: 1.5rem;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr); 
+}
+.about h1{
+    font-size: 1.75rem;
+    color: rgba(0, 128, 2, 0.805);
+}
+.about h2{
+    font-size: var(--h2-font);
+    
+}
+.about img{
+    width: 80%;
+    border-radius: 10px;
+}
+.about p{
+    padding: 10px;
+}
+
+
+
+
+
+.box-menu {
+    position: relative;
+    margin-top: 2rem;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    padding: 10px;
+  }
+  .box-img {
+    width: 200px;
+    height: 200px;
+  }
+  .box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    object-position: center;
+  }
+  .menu-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1.5rem;
+    align-items: center;
+  }
+ .menu-heading{
+    text-align: center;
+ }
+ .menu-heading h1{
+    font-size: 1.75rem;
+    color: var(--main-color);
+ }
+ .box-menu .bx {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    background: var(--main-color);
+    border-radius: 0 0.5rem 0 0.5rem;
+    padding: 5px 8px;
+  }
+  .box-menu .bx:hover {
+    background: #ffa400;
+  } 
+ .box-menu {
+    position: relative;
+    margin-top: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgb(4 64 54 / 10%);
+    padding: 10px;
+  }
+
+
+
+
+  .service-heading{
+    text-align: center;
+  }
+  .service-heading h1{
+    color:var(--main-color);
+    font-size: 2rem;
+  }
+  .service-box {
+    position: relative;
+    margin-top: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgb(4 64 54 / 10%);
+    padding: 10px;
+    
+  }
+  .service img{
+    align-items: center;
+    width: 40%;
+    object-fit: contain;
+    object-position: center;
+    
+  }
+  .service-container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    align-items: center;
+    gap: 5rem;
+    padding-top: 0;
+  }
+  .service-box p{
+        text-align:left ;
+  }
+
+
+ 
+  .booking .btn {
+     border-radius: 2rem;
+     background: var(--main-color);
+     
+  }
+  .contact {
+    display:flex ;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+  }
+  .contact h1{
+     font-size: var(--h1-font);
+  }
+  .contact-text span{
+    color: var(--main-color);
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .booking .btn:hover {
+    background: #ffa400;
+    cursor: pointer;
+  }
+  
+   
+  .connect {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 1.5rem;
+  }
+  .connect-box h3 {
+    margin-bottom: 1rem;
+  }
+  .social {
+    display: flex;
+    margin-top: 1.5rem;
+  }
+  .social i {
+    font-size: 20px;
+    margin-right: 1rem;
+    color: var(--text-color);
+  }
+  .social i:hover {
+    color: var(--main-color);
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+  }
+  .address i {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+  .address span {
+    margin-left: 1rem;
+  }
+  .connect li{
+    text-decoration: underline;
+  }
+  
+    
+  @media (max-width: 768px) {
+    header {
+        padding: 10px 20px; 
+    }
+    
+    .home-text h1{
+      font-size: 2.5rem;
+    }
+    .navbar {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px; 
+        right: 0;
+        background-color: var(--bg-color);
+        width: 100%;
+        text-align: center;
+        
+    }
+    .navbar.active {
+        display: flex; 
+    }
+
+    #menu-icon {
+        display: block; 
+    }
+
+    .about, .menu-container, .service-container, .connect {
+        grid-template-columns: 1fr; 
+    }
+
+    .service img {
+        width: 80%; 
+    }
+}
+@media (max-width: 360px) {
+  .home-text h1{
+    font-size: 1.8rem;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .home-text h1{
+    font-size: 1.4rem;
+  }
+  .home-text h2{
+    font-size: 1.2rem;
+  }
+  .about-text h2{
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+}
+  

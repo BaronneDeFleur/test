@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bin's Restaurant</title>
+    <link rel="stylesheet" href="booking.css" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  </head>
+  <body>
+   <!--Thanhnav-->
+    <header>
+      <a href="index.html" class="logo">Home</a>
+      <h2>Tasty's-forms</h2>
+      
+      <nav>
+        <ul class="navbar">
+          <li><a href="#Customer-info">Info</a></li>
+          <li><a href="#Customer-feedback">Feedbacks</a></li>
+          <li><a href="#Customer-vouchers">Vouchers</a></li>
+        </ul>
+      </nav>
+      <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+    <form method="post">
+
+       <!--info--> 
+    <section role="region" class="Customer-info">
+        <h2 id="Customer-info">Customer Info</h2>
+        <div class="info">
+          <label for="customer-name">Name:</label>
+          <input type="text" name="customer-name" id="customer-name" required/>
+        </div>
+        <div class="info" >
+          <label for="customer-email" >Email:</label>
+          <input type="email" name="customer-email" id="customer-email" required />
+        </div>
+        <div class="info">
+          <label for="birth-date">Date of Birth:</label>
+          <input type="date" name="birth-date" id="birth-date" required/>
+        </div>
+        <div class="info">
+          <label for="mobile-phone">Mobile-phone</label>
+          <input type="tel" name="mobile-phone" id="mobile-phone" required/>
+        </div>
+        <div class="info">
+          <label for="address">Address</label>
+          <input type="text" name="address" id="address" required/>
+        </div>
+        <button type="submit" class="submit-button">Submit</button>
+        <i class='bx bx-down-arrow-alt'>Scroll to give us feedbacks and take some vouchers</i>
+      </section>
+      
+
+      <!--Feedbacks-->
+      <section role="region" class="Customer-feedback">
+        <h2 id="Customer-feedback">Feedback on Our Restaurant</h2>
+        <div class="question">
+            <label for="food-quality">How would you rate the quality of the food?</label>
+            <div class="rating">
+                <input type="radio" id="food-1" name="food-quality" value="1">
+                <label for="food-1">1</label>
+                <input type="radio" id="food-2" name="food-quality" value="2">
+                <label for="food-2">2</label>
+                <input type="radio" id="food-3" name="food-quality" value="3">
+                <label for="food-3">3</label>
+                <input type="radio" id="food-4" name="food-quality" value="4">
+                <label for="food-4">4</label>
+                <input type="radio" id="food-5" name="food-quality" value="5">
+                <label for="food-5">5</label>
+            </div>
+        </div> 
+        <div class="question">
+            <label for="service-quality">How would you rate the quality of the service?</label>
+            <div class="rating">
+                <input type="radio" id="service-1" name="service-quality" value="1">
+                <label for="service-1">1</label>
+                <input type="radio" id="service-2" name="service-quality" value="2">
+                <label for="service-2">2</label>
+                <input type="radio" id="service-3" name="service-quality" value="3">
+                <label for="service-3">3</label>
+                <input type="radio" id="service-4" name="service-quality" value="4">
+                <label for="service-4">4</label>
+                <input type="radio" id="service-5" name="service-quality" value="5">
+                <label for="service-5">5</label>
+            </div>
+        </div>
+        <div class="question">
+            <label for="overall-experience">How would you rate your overall experience?</label>
+            <div class="rating">
+                <input type="radio" id="experience-1" name="overall-experience" value="1">
+                <label for="experience-1">1</label>
+                <input type="radio" id="experience-2" name="overall-experience" value="2">
+                <label for="experience-2">2</label>
+                <input type="radio" id="experience-3" name="overall-experience" value="3">
+                <label for="experience-3">3</label>
+                <input type="radio" id="experience-4" name="overall-experience" value="4">
+                <label for="experience-4">4</label>
+                <input type="radio" id="experience-5" name="overall-experience" value="5">
+                <label for="experience-5">5</label>
+            </div>
+        </div>
+        <div class="question">
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Please share your feedbacks..."></textarea>
+        </div>
+        <button type="submit" class="submit-button">Submit Feedback</button>
+    </section>
+    
+    <!--Voucher-->
+    <section role="region" class="Customer-vouchers">
+      <h2 id="Customer-vouchers">Available Vouchers</h2>
+      <div class="voucher-list">
+          <div class="voucher">
+              <h3>📉 10% Next Visit</h3>
+              <p>Enjoy a 10% discount on your next visit to our restaurant.</p>
+              <button class="claim-button">Claim Voucher</button> 
+          </div>
+          <div class="voucher">
+              <h3>Free Dessert</h3>
+              <p>Get a free dessert with any meal purchase on your next visit.</p>
+              <button class="claim-button">Claim Voucher</button>
+          </div>
+          <div class="voucher">
+              <h3>Buy One Get One </h3>
+              <p>Buy one main course at freeweek and get another one for free.</p>
+              <button class="claim-button">Claim Voucher</button>
+          </div>
+      </div>
+  </section>
+  
+  
+
+
+<!--Link to js-->
+   </form>
+   <script src="main.js"></script>
+   </body>
+   </html>
+   
